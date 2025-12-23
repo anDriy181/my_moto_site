@@ -1,0 +1,130 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #96a4a3;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Меню навігації */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+/* Основний контент */
+main {
+    padding: 20px;
+    max-width: fit-content;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+   #box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Списки */
+ul, ol {
+    margin: 15px 0;
+    padding-left: 40px;
+}
+
+/* Галерея */
+img {
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Футер */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+/* Кнопка */
+#theme-toggle {
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #444;
+}
+
+/* Темна тема */
+.dark {
+    background-color: #121212;
+    color: #9f0b0b;
+}
+
+.dark header,
+.dark footer {
+    background-color: #1f1f1f;
+}
+.engine-btn {
+    background: #000000;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.engine-btn:hover {
+    background: #000000;
+}
+
+.shake {
+    animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0px); }
+    20% { transform: translateX(-3px); }
+    40% { transform: translateX(3px); }
+    60% { transform: translateX(-3px); }
+    80% { transform: translateX(3px); }
+    100% { transform: translateX(0px); }
+}
+
